@@ -91,7 +91,7 @@ main a:not(:has(img)) {
 .social-links {
 	margin: 2rem 0 2rem 0;
 	display: flex;
-	gap: 1.2rem;
+	gap: 2.3rem;
 }
 
 footer {
@@ -99,7 +99,7 @@ footer {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 1rem;
+	gap: 2.2rem;
 	padding: 1rem 2rem;
 }
 
