@@ -2,14 +2,6 @@
 
 ## Live Demo: https://hng22-task1.netlify.app
 
-## SNAPSHOTS 
-
-
- - ![Mobile view ](./src/assets/(iPhone SE).png "Mobile View")
-
- - ![Tablet and Desktop view ](./src/assets/(iPhone SE).png "Tablet and Desktop View")
-
-
 ## REQUIREMENTS
 
 - Create a page like Linktree that allows a person show their personal profile and link to various digital things that they sell.

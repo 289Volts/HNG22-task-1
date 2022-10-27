@@ -64,10 +64,6 @@ function App() {
 					</a>
 				</footer>
 			</div>
-			<div className="images">
-				<img className="mobile-img" src="./src/assets/(iPhone SE).png" alt="" />
-				<img className="tablet-img" src="./src/assets/(iPad).png" alt="" />
-			</div>
 		</div>
 	);
 }

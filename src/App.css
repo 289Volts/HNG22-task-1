@@ -107,19 +107,6 @@ img[alt="I4G logo"] {
 	translate: -6%;
 }
 
-.images {
-	display: flex;
-    flex-direction: column;
-	display: none;
-}
-
-.mobile-img {
-	width: 40%;
-}
-
-.tablet-img {
-	width: 500px;
-}
 
 @media (min-width:768px) {
 	body {
