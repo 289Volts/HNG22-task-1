@@ -109,16 +109,10 @@ img[alt="I4G logo"] {
 
 
 @media (min-width:768px) {
-	body {
-		height: 100vh;
-		display: flex;
-		justify-content: center;
-        align-items: center;
-	}
 
 .container {
   font-size: 1rem;
-  padding: 0 1.5rem;
+  padding: 2.5 1.5rem;
 }
 
 .float-desktop {
