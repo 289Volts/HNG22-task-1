@@ -3,7 +3,7 @@ import "./App.css";
 import profileImg from "./assets/profile-img.jpg";
 import share from "./assets/share-button.svg";
 import dots from "./assets/dots.svg";
-import github from "./assets/icon.svg";
+import github from "./assets/github.svg";
 import slack from "./assets/slack.svg";
 import i4g from "./assets/I4G.svg";
 import zuri from "./assets/Zuri.Internship_Logo.svg";
