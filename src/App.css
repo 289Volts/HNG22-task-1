@@ -1,17 +1,17 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 :focus {
-  outline: none;
+	outline: none;
 }
 
 .container {
-  width: 100%;
-  max-width: 700px;
-  margin: 0 auto;
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -51,7 +51,7 @@ header a {
 	width: 100%;
 	border-radius: 50%;
 	border: 1px solid #c7c7c8;
-  aspect-ratio: 1;
+	aspect-ratio: 1;
 }
 
 .profile-img {
@@ -107,44 +107,41 @@ img[alt="I4G logo"] {
 	translate: -6%;
 }
 
+@media (min-width: 768px) {
+	.container {
+		font-size: 1rem;
+		padding-top: 2.5rem;
+	}
 
-@media (min-width:768px) {
+	.float-desktop {
+		display: block;
+		right: 10%;
+	}
 
-.container {
-  font-size: 1rem;
-  padding: 2.5 1.5rem;
-}
+	main a:not(:has(img)) {
+		width: 100%;
+	}
 
-.float-desktop {
-	display: block;
-  right: 10%;
-}
+	.float {
+		display: none;
+	}
 
-main a:not(:has(img)) {
-  width: 100%;
-}
+	.social-links {
+		margin-bottom: 0;
+	}
 
-.float {
-	display: none;
-}
+	footer {
+		padding: 1rem 0;
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 
-.social-links {
-  margin-bottom: 0;
-}
+	footer img {
+		width: 82%;
+	}
 
-footer {
-  padding: 1rem 0;
-  width: 100%;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-footer img {
-  width: 82%;
-}
-
-footer a:has(img[alt="I4G logo"]) {
-  text-align: right;
-}
-
+	footer a:has(img[alt="I4G logo"]) {
+		text-align: right;
+	}
 }
