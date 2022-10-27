@@ -110,6 +110,7 @@ img[alt="I4G logo"] {
 .images {
 	display: flex;
     flex-direction: column;
+	display: none;
 }
 
 .mobile-img {
