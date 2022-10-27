@@ -1,6 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: none;
+}
+
 .container {
   width: 100%;
   max-width: 700px;
+  margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -34,11 +45,24 @@ header a {
 	gap: 1.5rem;
 }
 
+#profile__img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	border: 1px solid #c7c7c8;
+  aspect-ratio: 1;
+}
+
+.profile-img {
+	width: 98px;
+}
+
 .float,
 .float-desktop {
 	position: absolute;
 	right: 0%;
-	top: -5%;
+	top: 0%;
 }
 
 .float-desktop {
@@ -50,7 +74,7 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 1rem;
+	gap: 0.7rem;
 	width: 100%;
 }
 
@@ -83,19 +107,42 @@ img[alt="I4G logo"] {
 	translate: -6%;
 }
 
-#profile__img {
+@media (min-width:768px) {
+.container {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+.float-desktop {
+	display: block;
+  right: 10%;
+}
+
+main a:not(:has(img)) {
+  width: 100%;
+}
+
+.float {
 	display: none;
 }
 
-#profile__imgg {
-	object-fit: cover;
-	height: 100%;
-	width: 100%;
-	border-radius: 50%;
-	border: 1px solid #c7c7c8;
-  aspect-ratio: 1;
+.social-links {
+  margin-bottom: 0;
 }
 
-.profile-img {
-	width: 98px;
+footer {
+  padding: 1rem 0;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer img {
+  width: 82%;
+}
+
+footer a:has(img[alt="I4G logo"]) {
+  text-align: right;
+}
+
 }
