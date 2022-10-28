@@ -84,7 +84,7 @@ main a:not(:has(img)) {
 	border: 1px solid #cdced1;
 	padding: 1.3rem;
 	border-radius: 4px;
-	background: #eaecf0;
+	background: #EAECF0;
 	text-align: center;
 }
 

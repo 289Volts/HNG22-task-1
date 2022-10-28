@@ -20,28 +20,48 @@ function App() {
 						<a href="https://twitter.com/289volts" id="twitter" target="blank" title="Link to my Twitter handle">
 							@289Volts
 						</a>
+					{/* <p id="slack">Slack Username: @289Volts</p> */}
 					</div>
 					<img className="float-desktop" src={share} alt="" />
 					<img className="float" src={dots} alt="" />
-					{/* <p id="slack">Slack Username: @289Volts</p> */}
 				</header>
 				<main>
-					<a href="https://twitter.com/289volts" id="twitter" target="blank">
+					<a href="https://twitter.com/289volts" id="twitter" target="blank" title="Link to my Twitter handle">
 						Twitter
 					</a>
-					<a href="https://training.zuri.team/" id="btn__zur" target="blank">
+					<a
+						href="https://training.zuri.team/"
+						id="btn__zur"
+						target="blank"
+						title="Click here to explore the world of Zuri"
+					>
 						Zuri Team
 					</a>
-					<a href="http://books.zuri.team" id="books" target="blank">
+					<a href="http://books.zuri.team" id="books" target="blank" title="Get books on Design and coding here">
 						Zuri Books
 					</a>
-					<a href="https://books.zuri.team/python-for-beginners?ref_id=289volts" id="book__python" target="blank">
+					<a
+						href="https://books.zuri.team/python-for-beginners?ref_id=289volts"
+						id="book__python"
+						target="blank"
+						title="We've got the best books on Python for Beginners and Experts"
+					>
 						Python Books
 					</a>
-					<a href="https://backgroundcheck.zuri.team/" id="pitch" target="blank">
+					<a
+						href="https://backgroundcheck.zuri.team/"
+						id="pitch"
+						target="blank"
+						title="Need to verify your employees? Let's help you do that."
+					>
 						Background Check for Coders
 					</a>
-					<a href="https://books.zuri.team/design-rules" id="book__design" target="blank">
+					<a
+						href="https://books.zuri.team/design-rules"
+						id="book__design"
+						target="blank"
+						title="Learn Design through our curated list of books."
+					>
 						Design Books
 					</a>
 
