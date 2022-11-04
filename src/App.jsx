@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // import profileImg from "./assets/profile-img.jpg";
@@ -8,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import github from "./assets/github.svg";
 // import slack from "./assets/slack.svg";
 import Home from "./pages/home";
+import Contact from "./pages/contact";
 // import Home from "./components/home.jsx";
 
 
@@ -83,6 +83,7 @@ function App() {
 			<Router>
 				<Routes>
 					<Route path="/" element={<Home />} />
+					<Route path="/contact" element={<Contact />} />
 				</Routes>
 			</Router>
 		</div>
