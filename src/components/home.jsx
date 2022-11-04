@@ -1,20 +1,15 @@
-import React from "react";
-import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "../home.css";
+import profileImg from "../assets/profile-img.jpg";
+import share from "../assets/share-button.svg";
+import dots from "../assets/dots.svg";
+import github from "../assets/github.svg";
+import slack from "../assets/slack.svg";
+import Footer from "../components/footer";
 
-// import profileImg from "./assets/profile-img.jpg";
-// import share from "./assets/share-button.svg";
-// import dots from "./assets/dots.svg";
-// import github from "./assets/github.svg";
-// import slack from "./assets/slack.svg";
-import Home from "./pages/home";
-// import Home from "./components/home.jsx";
-
-
-function App() {
+function homePage() {
 	return (
 		<div className="App">
-			{/* <div className="container">
+			<div className="container">
 				<header>
 					<div className="profile">
 						<div className="profile-img">
@@ -23,7 +18,7 @@ function App() {
 						<a href="https://twitter.com/289volts" id="twitter" target="blank" title="Link to my Twitter handle">
 							@289Volts
 						</a>
-					<p id="slack">Slack Username: @289Volts</p>
+						{/* <p id="slack">Slack Username: @289Volts</p> */}
 					</div>
 					<img className="float-desktop" src={share} alt="" />
 					<img className="float" src={dots} alt="" />
@@ -78,15 +73,9 @@ function App() {
 					</div>
 				</main>
 				<Footer />
-			</div> */}
-			{/* <Home /> */}
-			<Router>
-				<Routes>
-					<Route path="/" element={<Home />} />
-				</Routes>
-			</Router>
+			</div>
 		</div>
 	);
 }
 
-export default App;
+export default homePage;

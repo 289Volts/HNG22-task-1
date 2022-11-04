@@ -1,0 +1,156 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:focus {
+	outline: none;
+}
+
+.container {
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2.5rem;
+	padding: 3.5rem 1rem 0 1rem;
+	font-family: "Inter", sans-serif;
+	font-size: 0.875rem;
+}
+
+a {
+	text-decoration: none;
+	color: #101828;
+	font-weight: 600;
+}
+
+header {
+	position: relative;
+	width: 100%;
+}
+
+header a {
+	font-size: 1rem !important;
+}
+
+.profile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+#profile__img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	border: 1px solid #c7c7c8;
+	aspect-ratio: 1;
+}
+
+.profile-img {
+	width: 98px;
+}
+
+.float,
+.float-desktop {
+	position: absolute;
+	right: 0%;
+	top: 0%;
+}
+
+.float-desktop {
+	display: none;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.8rem;
+	width: 100%;
+}
+
+main a:not(:has(img)) {
+	display: block;
+	width: 90%;
+	padding: 1.3rem;
+	border-radius: 4px;
+	background: #F2F4F7;
+	text-align: center;
+	border: none;
+
+}
+
+main a:not(:has(img)):focus {
+	outline: 1px solid #D0D5DD;
+}
+main a:not(:has(img)):hover {
+	outline: none;
+	background-color: #D0D5DD;
+}
+
+.social-links {
+	margin: 2rem 0 2rem 0;
+	display: flex;
+	gap: 2.3rem;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2.2rem;
+	padding: 1rem 2rem;
+}
+
+img[alt="I4G logo"] {
+	translate: -6%;
+}
+
+@media (min-width: 768px) {
+	.container {
+		font-size: 1rem;
+		padding-top: 2.5rem;
+	}
+
+	.float-desktop {
+		display: block;
+		right: 10%;
+	}
+
+	main a:not(:has(img)) {
+		width: 100%;
+	}
+
+	.float {
+		display: none;
+	}
+
+	.social-links {
+		margin-bottom: 0;
+	}
+
+	footer {
+		padding: 1rem 0;
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	footer img {
+		width: 82%;
+	}
+
+	footer a:has(img[alt="I4G logo"]) {
+		text-align: right;
+	}
+}
