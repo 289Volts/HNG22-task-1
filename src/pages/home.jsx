@@ -5,6 +5,7 @@ import dots from "../assets/dots.svg";
 import github from "../assets/github.svg";
 import slack from "../assets/slack.svg";
 import Footer from "../components/footer";
+import {Link} from 'react-router-dom'
 
 function homePage() {
 	return (
@@ -62,9 +63,9 @@ function homePage() {
 					>
 						Design Books
 					</a>
-					<a href='' id="contact" target="blank" title="Learn Design through our curated list of books.">
+					<Link to="/contact" id="contact" target="blank" title="Reach me through this link.">
 						Contact Me
-					</a>
+					</Link>
 
 					<div className="social-links">
 						<a href="#">
