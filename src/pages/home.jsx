@@ -63,13 +63,13 @@ function homePage() {
 					>
 						Design Books
 					</a>
-					<Link to="/contact" id="contact" target="blank" title="Reach me through this link.">
+					<Link to="/contact" id="contact" title="Reach me through this link.">
 						Contact Me
 					</Link>
 
 					<div className="social-links">
 						<a href="#">
-							<img src={slack} alt="zuri logo" />
+							<img src={slack} alt="slack logo" />
 						</a>
 						<a href="https://github.com/289volts" target="blank">
 							<img src={github} alt="zuri logo" />

@@ -149,7 +149,7 @@ function contact() {
 								onChange={handleChange}
 								{...(formErrors.checkbox && { style: { border: "1px solid red" } })}
 							/>
-							<p htmlFor="agree"> You agree to providing your data to {} who may contact you.</p>
+							<p htmlFor="agree"> You agree to providing your data to Volts who may contact you.</p>
 						</div>
 						<div className="terms-error__wrapper">
 							<span className="error">{formErrors.checkbox}</span>
@@ -157,7 +157,12 @@ function contact() {
 					</div>
 
 					<div className="form-cta">
-						<button type="submit">Send Message</button>
+						<button
+							type="submit"
+							{...(formData.firstName && formData.lastName && formData.email &&formData.message && formData.checkbox) && {style: { backgroundColor: "#1570EF" }}}
+						>
+							Send Message
+						</button>
 					</div>
 				</form>
 			</div>
