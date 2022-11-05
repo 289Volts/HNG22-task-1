@@ -157,7 +157,12 @@ function contact() {
 					</div>
 
 					<div className="form-cta">
-						<button type="submit">Send Message</button>
+						<button
+							type="submit"
+							{...(formData.firstName && formData.lastName && formData.email &&formData.message && formData.checkbox) && {style: { backgroundColor: "#1570EF" }}}
+						>
+							Send Message
+						</button>
 					</div>
 				</form>
 			</div>
