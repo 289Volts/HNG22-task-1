@@ -39,9 +39,6 @@ function contact() {
 			};
 		});
 
-		// if (!Object.keys(formErrors).length === 0 && isSubmit) {
-		// 	navigate("/");
-		// }
 	}
 
 	React.useEffect(() => {
