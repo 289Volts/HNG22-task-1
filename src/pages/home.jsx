@@ -10,7 +10,7 @@ import {Link} from 'react-router-dom'
 function homePage() {
 	return (
 		<div className="App">
-			<div className="container">
+			<div className="homepage-container">
 				<header>
 					<div className="profile">
 						<div className="profile-img">
