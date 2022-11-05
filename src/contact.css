@@ -44,15 +44,36 @@
 	color: #101828;
 }
 
+.overlay {
+	position: fixed;
+	inset: 0;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 99;
+	gap:0.8rem;
+}
+
+.redirect {
+	background-color: #175CD3;
+	color: white;
+	padding: 0.7rem;
+	border-radius: 3px;
+
+}
+
 .success-message {
 	border: 1px solid rgb(189, 224, 189);
-	background-color: rgba(220, 243, 220, 0.935);
+	background-color: white;
 	padding: 1rem;
+	color: #2dc42dee;
 	border-radius: 6px;
 	width: fit-content;
 	margin-bottom: 0.7rem;
-	font-size: 1rem;
-	font-weight: 500;
+	font-size: 1.1rem;
+	font-weight: 600;
 }
 
 .form-header {
@@ -162,25 +183,7 @@ button:hover {
 	background-color: #175CD3;
 }
 
-.overlay {
-	position: fixed;
-	inset: 0;
-	background-color: #d7d8da;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	z-index: 99;
-	gap:0.8rem;
-}
 
-.redirect {
-	background-color: #175CD3;
-	color: white;
-	padding: 0.7rem;
-	border-radius: 3px;
-
-}
 
 
 @media (min-width: 768px) {
