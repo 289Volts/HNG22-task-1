@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../components/footer";
 import "../contact.css";
-import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 function contact() {
 	const [formErrors, setFormErrors] = React.useState({});
@@ -39,23 +39,16 @@ function contact() {
 			};
 		});
 
-		setTimeout(() => {
-			navigate("/")
-		}, 2000);
-		;
+		// if (!Object.keys(formErrors).length === 0 && isSubmit) {
+		// 	navigate("/");
+		// }
 	}
 
 	React.useEffect(() => {
 		if (Object.keys(formErrors).length === 0 && isSubmit) {
-			setFormData(() => {
-				return {
-					firstName: "",
-					lastName: "",
-					email: "",
-					message: "",
-					checkbox: false,
-				};
-			});
+			setTimeout(() => {
+				navigate("/");
+			}, 2000);
 		}
 	}, [formErrors]);
 	const validate = (values) => {
