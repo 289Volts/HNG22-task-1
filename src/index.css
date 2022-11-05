@@ -5,3 +5,15 @@
 }
 
 
+html {
+	--text: "#101828";
+	--primaryColor: "#1570EF";
+	--borderGray: "#D0D5DD";
+	--btnText: "#fff";
+	--btnHover: "#175cd3";
+	--error: "#F83F23";
+	--focus: "#84caff";
+	--invalidInput: "#f89687";
+	--validInput: "#a8f8a8";
+}
+
