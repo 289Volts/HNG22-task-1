@@ -45,9 +45,10 @@
 }
 
 .success-message {
-	border: 1px solid rgb(174, 220, 174);
+	border: 1px solid rgb(189, 224, 189);
 	background-color: rgba(220, 243, 220, 0.935);
 	padding: 1rem;
+	border-radius: 6px;
 	width: fit-content;
 	margin-bottom: 0.7rem;
 	font-size: 1rem;
@@ -159,6 +160,26 @@ button {
 
 button:hover {
 	background-color: #175CD3;
+}
+
+.overlay {
+	position: fixed;
+	inset: 0;
+	background-color: #d7d8da;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 99;
+	gap:0.8rem;
+}
+
+.redirect {
+	background-color: #175CD3;
+	color: white;
+	padding: 0.7rem;
+	border-radius: 3px;
+
 }
 
 

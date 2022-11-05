@@ -1,8 +1,7 @@
 import React from "react";
 import Footer from "../components/footer";
 import "../contact.css";
-import {  useNavigate } from "react-router-dom";
-
+import { useNavigate, Link } from "react-router-dom";
 
 function contact() {
 	const [formErrors, setFormErrors] = React.useState({});
@@ -39,14 +38,15 @@ function contact() {
 				checkbox: false,
 			};
 		});
-
 	}
 
 	React.useEffect(() => {
 		if (Object.keys(formErrors).length === 0 && isSubmit) {
-			setTimeout(() => {
-				navigate("/");
-			}, 3000);
+			// navigate("/contact");
+			// setTimeout(() => {
+			// 	navigate("/contact");
+			// }, 3000);
+			// const overlay = () => {};
 		}
 	}, [formErrors]);
 	const validate = (values) => {
@@ -76,10 +76,16 @@ function contact() {
 		<div className="container">
 			<div className="wrapper">
 				{Object.keys(formErrors).length === 0 && isSubmit ? (
-					<div className="success-message">Message sent successfully</div>
+					<div className="overlay">
+						<p className="success-message">Message sent successfully</p>
+						<Link to="/" className="redirect">
+							Back to Home
+						</Link>
+					</div>
 				) : (
 					""
 				)}
+
 				<div className="form-header">
 					<h1 className="form-heading">Contact Me</h1>
 					<p className="form-subtitle">Hi there, contact me to ask me about anything you have in mind.</p>
@@ -159,7 +165,11 @@ function contact() {
 					<div className="form-cta">
 						<button
 							type="submit"
-							{...(formData.firstName && formData.lastName && formData.email &&formData.message && formData.checkbox) && {style: { backgroundColor: "#1570EF" }}}
+							{...(formData.firstName &&
+								formData.lastName &&
+								formData.email &&
+								formData.message &&
+								formData.checkbox && { style: { backgroundColor: "#1570EF" } })}
 						>
 							Send Message
 						</button>
