@@ -1,8 +1,6 @@
 import React from "react";
 import Footer from "../components/footer";
 import "../contact.css";
-import "../index.css";
-import Home from "../pages/home";
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 
 function contact() {
@@ -87,9 +85,9 @@ function contact() {
 		<div className="container">
 			<div className="wrapper">
 				{Object.keys(formErrors).length === 0 && isSubmit ? (
-					<div className="ui message success">Message sent successfully</div>
+					<div className="success-message">Message sent successfully</div>
 				) : (
-					<pre>{JSON.stringify(formData, undefined, 2)}</pre>
+					""
 				)}
 				<div className="form-header">
 					<h1 className="form-heading">Contact Me</h1>
@@ -107,7 +105,7 @@ function contact() {
 							onChange={handleChange}
 							{...(formErrors.firstName && { style: { border: "1px solid red" } })}
 						/>
-						
+
 						<span className="error">{formErrors.firstName}</span>
 					</div>
 					<div className="form-input">
