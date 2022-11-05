@@ -3,6 +3,7 @@ import Footer from "../components/footer";
 import "../contact.css";
 import {  useNavigate } from "react-router-dom";
 
+
 function contact() {
 	const [formErrors, setFormErrors] = React.useState({});
 	const [isSubmit, setIsSubmit] = React.useState(false);
