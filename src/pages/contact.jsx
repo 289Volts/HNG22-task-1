@@ -148,7 +148,7 @@ function contact() {
 								onChange={handleChange}
 								{...(formErrors.checkbox && { style: { border: "1px solid red" } })}
 							/>
-							<p htmlFor="agree"> You agree to providing your data to {} who may contact you.</p>
+							<p htmlFor="agree"> You agree to providing your data to Volts who may contact you.</p>
 						</div>
 						<div className="terms-error__wrapper">
 							<span className="error">{formErrors.checkbox}</span>
