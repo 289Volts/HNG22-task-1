@@ -46,7 +46,7 @@ function contact() {
 		if (Object.keys(formErrors).length === 0 && isSubmit) {
 			setTimeout(() => {
 				navigate("/");
-			}, 2000);
+			}, 3000);
 		}
 	}, [formErrors]);
 	const validate = (values) => {
